@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>crop sucess/పంట ఉత్పత్తి</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+	
+	<img class="img_f" src="./artifacts/images/farmers.jpeg" alt="farmers">
+	<img class="img_a" src="./artifacts/images/anits.png" alt="anits">
+
+
+	<button id="infoButton" onclick="showInformation()"><b>ⓘ | సూచనలు</b></button><br>
+
+	<center><img class="img_banner1" src='https://autonomous.anits.edu.in/assets/images/banner.jpg' alt="anits"></center>
+
+	<div id="infoBox">
+        <button id="closeButton" onclick="closeInformation()">Close</button>
+        <center><h2><b>-> instructions / సూచనలు :</b></h2></center>
+		<br>
+		<table id="info_table">
+		<tr>
+		<td><h4>In the first block enter the rain-fall in your area in mm</h4></td>
+		<td><h4>మొదటి బ్లాక్‌లో మీ ప్రాంతంలో వర్షపాతాన్ని mmలో నమోదు చేయండి</h4></td>
+		</tr>
+
+		<tr>
+		<td><h4>In the second block select the type of crop</h4>
+		<td><h4>రెండవ బ్లాక్‌లో పంట రకాన్ని ఎంచుకోండి</h4>
+		</tr>
+
+		<tr>
+			<td><h4>In the third block select the type of soil</h4>
+				<td><h4>మూడవ బ్లాక్‌లో నేల రకాన్ని ఎంచుకోండి</h4>
+		</tr>
+
+		<tr>
+			<td><h4>In the fourth block select current season</h4>
+				<td><h4>నాల్గవ బ్లాక్‌లో ప్రస్తుత సీజన్‌ను ఎంచుకోండి</h4>
+		</tr>
+
+		<tr>
+			<td><h4>In the fifth block select the pestiside you want to use</h4>
+				<td><h4>ఐదవ బ్లాక్‌లో మీరు ఉపయోగించాలనుకుంటున్న పెస్టిసైడ్‌ను ఎంచుకోండి</h4>
+		</tr>
+
+		<tr>
+			<td><h4>After filling contents click on get sucess rate</h4>
+				<td><h4>వివరాలు నింపిన తర్వాత పంట ఉత్పత్తి శాతం పై క్లిక్ చేయండి</h4>
+		</tr>
+
+		<tr>
+			<td><h4>output will be shown in the below box</h4>
+				<td><h4>సమాధానం చూపబడుతుంది</h4>
+		</tr>
+
+		</table>
+    </div>
+
+
+
+<div class="img"></div>
+<form class="form">
+	<h2>Rainfall/వర్షపాతం(mm)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="111">
+	
+	<h2>Crop/పంట రకం</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">rice/బియ్యం</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">wheat/గోధుమ</label>
+		<!-- <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label> -->
+	</div>
+	<form class="form">
+		<h2>Soil Type/నేల రకం</h2>
+		<div class="switch-field">
+			<input type="radio" id="radio-bhk-11" name="uiBHK1" value="1"/>
+			<label for="radio-bhk-11">black/నలుపు రంగు</label>
+			<input type="radio" id="radio-bhk-22" name="uiBHK1" value="2" checked/>
+			<label for="radio-bhk-22">red/ఎరుపు రంగు</label>
+			<!-- <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+			<label for="radio-bhk-3">3</label>
+			<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+			<label for="radio-bhk-4">4</label>
+			<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+			<label for="radio-bhk-5">5</label> -->
+		</div>
+	</form>
+</form>
+
+
+ 
+<form class="form">
+
+	<h2>Season/కాలం</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">summer/వేసవి</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">winter/చలికాలం</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">rainy/వర్ష</label>
+		<!-- <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label> -->
+	</div>
+		<h2>Pesticide Used/ఉపయోగించబడిన పురుగుమందు</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose/ఒక పురుగుమందును ఎంచుకోండి</optionUsed>
+		<option>a</option>
+        <option>b</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Sucess Rate/పంట ఉత్పత్తి శాతం</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
